@@ -102,6 +102,8 @@ def delete_element(my_list, pos):
             node = node["next"]
             searchpos += 1
         prev["next"] = node["next"]
+        if prev["next"] == None: 
+            my_list['last'] = prev
     my_list['size'] -= 1
     return my_list
 
