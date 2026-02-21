@@ -21,6 +21,9 @@ def execute_all_tests():
     execute_list_tests()
     execute_queue_tests()
     execute_stack_tests()
+    def execute_pytest_test(test_name):   
+        os.system(f"pytest -v -k \"{test_name}\"")
+        os.system(f"py -m pytest -v -k \"{test_name}\"")
 
 
 def execute_list_tests(input_option="2"):

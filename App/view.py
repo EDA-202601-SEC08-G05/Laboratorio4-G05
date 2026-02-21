@@ -65,7 +65,7 @@ def load_data(control):
 
 def print_books_to_read(results):
     # TODO Imprimir los libros por leer
-    pass
+    print(results)  
 
 
 def print_tests_results(queue_results, stack_results):
